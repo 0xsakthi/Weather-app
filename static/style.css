@@ -1,0 +1,92 @@
+  * {
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("gif.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login {
+  width: 300px;
+  margin: 14px auto;
+  height: 15rem;
+}
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.login-cone {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 12px solid transparent;
+  border-bottom-color: rgba(32, 18, 230, 0.575);
+}
+.login-header {
+  background: rgba(32, 18, 230, 0.575);
+  padding: 20px;
+  font-size: 1.4rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.login-container {
+  border-style: groove;
+}
+
+.login p {
+  padding: 12px;
+}
+
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+  background-color: transparent;
+  color: black;
+  font-weight: bolder;
+}
+.login input::placeholder {
+  color: black;
+  font-size: 14px;
+}
+
+.login input[type="submit"] {
+  background: rgb(74, 50, 211);
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10%;
+}
+
+.login input[type="submit"]:hover {
+  background-color: #17c;
+  transition: 0.8s;
+}
+.foot{
+  background: lightblue;
+  padding: 1rem;
+  border-radius: 5px;
+  color: white;
+  margin: 1rem;
+}

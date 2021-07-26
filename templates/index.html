@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Weather-App</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+</head>
+
+<body>
+  <div class="login">
+    <div class="login-cone"></div>
+    <h3 class="login-header">Weather APP</h3>
+    <form class="login-container" method="POST" action="/send">
+      <p><input type="city" name="city" placeholder="Enter Your City" required>
+      </p>
+      <p> <input type="zipcode" name="zipcode" placeholder="Enter Your Zip code" required>
+      </p>
+      <p><input type="submit" value="Get My forcast"></p>
+       <b><font color = 'blue'>WEATHER REPORT</font></b>
+      <div class="alert">
+          <b><font color='red'>{{ res2 }}</font><b/><br>
+        </div>
+         <div class="alerts">
+          <b><font color='white'>{{ res1 }}</font><b/><br>
+            <b><font color='white'>{{ res3 }}</font><b/><br>
+              <b><font color='white'>{{ res4 }}</font><b/>
+
+        </div>
+     
+     </div>
+
+    </form>
+
+    </div>
+</body>
+
+</html>
